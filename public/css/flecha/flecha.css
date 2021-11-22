@@ -1,0 +1,76 @@
+.arrow-container-abrir {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 40px;
+  z-index: 15515;
+}
+
+.arrow-container-abrir:hover {
+  cursor: pointer;
+}
+
+.arrow-container-abrir:hover .arrow {
+  top: 50%;
+}
+
+.arrow-container-abrir:hover .arrow:before {
+  -webkit-transform: translate(-50%, -50%) rotateZ(-30deg);
+          transform: translate(-50%, -50%) rotateZ(-30deg);
+}
+
+.arrow-container-abrir:hover .arrow:after {
+  -webkit-transform: translate(-50%, -50%) rotateZ(30deg);
+          transform: translate(-50%, -50%) rotateZ(30deg);
+}
+
+.arrow {
+  position: relative;
+  left: 50%;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.arrow:before, .arrow:after {
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  content: '';
+  display: block;
+  position: absolute;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  background: #fff;
+  width: 1px;
+  height: 20px;
+  border-radius: 10px;
+  -webkit-transform: translate(-50%, -50%) rotateZ(-45deg);
+          transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+
+.arrow:after {
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: translate(-50%, -50%) rotateZ(45deg);
+          transform: translate(-50%, -50%) rotateZ(45deg);
+}
+
+.arrow:nth-child(1) {
+  opacity: 0.3;
+  top: 35%;
+}
+
+.arrow:nth-child(2) {
+  opacity: 0.6;
+  top: 55%;
+}
+
+.arrow:nth-child(3) {
+  opacity: 0.9;
+  top: 75%;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=flecha.css.map */
